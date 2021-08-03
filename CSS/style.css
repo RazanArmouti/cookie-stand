@@ -5,6 +5,7 @@ left: 100px;
 border-style: solid;
 border-color: brown;
 background-color: burlywood;
+
     
     
 }
@@ -77,4 +78,9 @@ td {
   table{
     width:100%;
     border: 1px solid black;
+  }
+  header{
+      display: grid;
+      grid-template-columns: auto auto;
+      width: 100%;
   }

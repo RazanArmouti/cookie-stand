@@ -32,7 +32,6 @@ Shops.prototype.getCookies = function (LocObj) {
   LocObj.TotalCookies = result;
 };
 
-
 let allShopsDiv = document.getElementById('shopsDiv');
 let tableElement = document.createElement('table');
 allShopsDiv.appendChild(tableElement);
@@ -42,7 +41,7 @@ let renderTableHeader = function () {
   let trElement = document.createElement('tr');
   tableElement.appendChild(trElement);
   let thElement = document.createElement('th');
-  thElement.textContent = 'area';
+  thElement.textContent = 'Area';
   trElement.appendChild(thElement);
 
   for (let H = 0; H < hours.length; H++) {
@@ -83,8 +82,6 @@ Shops.prototype.render = function (LocObj) {
   //Footer
 
 };
-
-
 let renderTableFooter = function () {
 
   let trElement = document.createElement('tr');
@@ -102,9 +99,6 @@ let renderTableFooter = function () {
   thElement2.textContent = totalColumn;
   trElement.appendChild(thElement2);
 };
-
-
-
 
 function allLocShops() {
   let seattle = new Shops(23, 65, 6.3, 'Seattle');
@@ -126,7 +120,5 @@ function allLocShops() {
   renderTableFooter();
 
 }
-
-
 
 allLocShops();

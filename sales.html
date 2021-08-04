@@ -14,6 +14,21 @@
         <a href="index.html" style="text-align: right;"> Home Page</a>
     </header>
     <main>
+        <form id="shopsLocForm" action="">
+            <fieldset>
+              <legend>Salmon Cookies Location:</legend>
+              <label for="loc">Location: (required)</label>
+              <input type="text" id="loc" name="loc" required><br><br>
+              <label for="minH">minimum Hour: (required)</label>
+              <input type="text" id="minH" name="minH" required><br><br>
+              <label for="maxH">maximum Hour: (required)</label>
+              <input type="text" id="maxH" name="maxH" required><br><br>
+              <label for="avg">Average Cookies Customer: (required)</label>
+              <input type="text" id="avg" name="avg" required><br><br>
+              <input type="submit" value="Submit" class="button">
+            </fieldset>
+          </form>
+
         <div id="shopsDiv"></div>
         <!-- <div id="seattleProfile"></div>
         <div id="tokyoProfile"></div>
@@ -25,7 +40,7 @@
     </main>
     <footer></footer>
     <!-- <script src="./JS/Shops.js"></script> -->
-    <script src="./JS/Shops-07-Constructor.js"></script>
+    <script src="./JS/Shops-09-form.js"></script>
 </body>
 
 </html>

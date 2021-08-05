@@ -114,3 +114,9 @@ td {
     display: inline-block;
     font-size: 16px;
   }
+
+  section{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: brown;
+  }
